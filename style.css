@@ -145,6 +145,7 @@ input:focus {
   padding: 1rem;
   height: 6rem;
   background-color: var(--color-input);
+  cursor: grab;
 }
 
 .list-item:first-child {
@@ -175,6 +176,7 @@ input:focus {
   margin-left: 1.5rem;
   margin-right: 1.5rem;
   background-color: transparent;
+  cursor: pointer;
 }
 
 .btn-check:hover {
@@ -246,6 +248,17 @@ input[type="radio"]:checked + label {
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+.dragging {
+  opacity: 0.5;
+}
+
+.drag-info {
+  text-align: center;
+  margin-top: 5rem;
+  color: var(--color-text);
+  font-size: 1.6rem;
 }
 
 @media (max-width: 580px) {
