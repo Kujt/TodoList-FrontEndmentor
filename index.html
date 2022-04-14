@@ -42,33 +42,72 @@
       <div class="container1">
         <section class="input-area">
           <i class="check"></i>
-          <input
-            type="text"
-            placeholder="Create a new to do..."
-            autocomplete="off"
-            class="input"
-          />
+          <form class="form">
+            <input
+              type="text"
+              placeholder="Create a new to do..."
+              autocomplete="off"
+              class="input"
+              id="input"
+            />
+          </form>
         </section>
 
         <section class="content">
-          <ul>
-            <li class="list-item">1</li>
-            <li class="list-item">1</li>
-            <li class="list-item">1</li>
-          </ul>
-          items left All Active Completed Clear Completed
+          <ul></ul>
+
+          <div class="todoFilters">
+            <div class="todoNum">
+              <span id="items-left">0</span> item(s) left
+            </div>
+            <div class="todoCat">
+              <input
+                type="radio"
+                name="filter"
+                id="all"
+                value="all"
+                class="btn-radio"
+                checked
+              />
+              <label class="btn-radio-cat" for="all">All</label>
+
+              <input
+                type="radio"
+                name="filter"
+                id="active"
+                value="active"
+                class="btn-radio"
+              />
+              <label class="btn-radio-cat" for="active">Active</label>
+
+              <input
+                type="radio"
+                name="filter"
+                id="completed"
+                value="completed"
+                class="btn-radio"
+              />
+              <label class="btn-radio-cat" for="completed">Completed</label>
+            </div>
+            <button class="btn--clear" id="clear-completed">
+              Clear Completed
+            </button>
+          </div>
         </section>
         <!-- Add dynamic number -->
         Drag and drop to reorder list
+        <footer>
+          <div class="attribution">
+            Challenge by
+            <a
+              href="https://www.frontendmentor.io?ref=challenge"
+              target="_blank"
+              >Frontend Mentor</a
+            >. Coded by <a href="#">Your Name Here</a>.
+          </div>
+        </footer>
       </div>
     </main>
-
-    <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
-    </div>
 
     <script src="script.js"></script>
   </body>

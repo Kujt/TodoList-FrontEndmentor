@@ -125,7 +125,7 @@ input:focus {
   margin-left: 1.5rem;
   width: 2.5rem;
   height: 2.5rem;
-  border: 1px solid rgba(0, 0, 0, 0.2);
+  border: 1px solid var(--color-text-grey);
   border-radius: 50%;
 }
 
@@ -136,10 +136,10 @@ input:focus {
 }
 
 .list-item {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 6fr 1fr;
   align-items: center;
   border: 1px solid rgba(0, 0, 0, 0.1);
-
   padding: 1rem;
   height: 6rem;
   background-color: var(--color-input);
@@ -151,4 +151,86 @@ input:focus {
 .list-item:first-child {
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
+}
+
+/* Element list */
+
+.btn-delete {
+  display: none;
+  width: 3rem;
+  height: 3rem;
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+}
+
+.list-item:hover > .btn-delete {
+  display: block;
+  opacity: 0.7;
+}
+.btn-check {
+  width: 3rem;
+  height: 3rem;
+  border: 1px solid var(--color-text-grey);
+  border-radius: 50%;
+  margin-left: 1.5rem;
+  background-color: transparent;
+}
+
+.btn-check:hover {
+  border: 1px solid hsl(280, 87%, 65%);
+}
+
+.complete-btn {
+  background: var(--check-box) no-repeat center, var(--check-bg);
+  text-decoration: line-through;
+}
+.text {
+  color: var(--color-text);
+}
+.complete span {
+  text-decoration: line-through;
+  color: var(--color-text-grey);
+}
+
+/* Filters */
+
+.todoFilters {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  padding: 1rem;
+  height: 6rem;
+  background-color: var(--color-input);
+  color: var(--color-text-grey);
+}
+
+.btn--clear {
+  background: transparent;
+  border: 0;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1.8rem;
+  cursor: pointer;
+  color: var(--color-text-grey);
+}
+
+.btn--clear:hover {
+  color: var(--color-hover);
+}
+
+.btn-radio {
+  visibility: hidden;
+}
+
+.btn-radio-cat {
+  cursor: pointer;
+}
+.btn-radio-cat:hover {
+  color: var(--color-hover);
+}
+
+input[type="radio"]:checked + label {
+  color: var(--bright-blue);
 }
