@@ -81,7 +81,6 @@ clear.addEventListener("click", () => {
   todos.forEach((todo) => {
     if (todo.classList.contains("complete")) {
       todo.remove();
-      counterUpdate(-1);
     }
   });
 });
