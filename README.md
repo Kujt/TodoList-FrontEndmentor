@@ -36,7 +36,7 @@ Users should be able to:
 
 ### What I learned
 
-UI learned a lot of manipulating the DOM with JavaScript, working with NodeList and iterating them, also drag and drop was a hard challenge to finish
+I learned a lot of manipulating the DOM with JavaScript, working with NodeList and iterating them, also drag and drop was a hard challenge to finish
 
 ### Continued development
 
